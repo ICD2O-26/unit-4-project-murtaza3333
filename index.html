@@ -4,69 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <title>Digital Twins</title>
+
   <style>
+    /* Page background and font */
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 40px auto;
       padding: 0 20px;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       color: #222;
     }
 
-    h1 {
-      font-size: 28px;
+    /* Dark banner at the top */
+    header {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
     }
 
+    header h1 {
+      margin: 0 0 6px 0;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.7;
+    }
+
+    /* Section heading color */
     h2 {
+      color: #1a1a2e;
       margin-bottom: 4px;
-      margin-top: 30px;
     }
 
-    button {
-      background: none;
-      border: 1px solid #555;
-      padding: 4px 10px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 4px;
-    }
-
+    /* Hides a section by default */
     .content {
       display: none;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      background-color: white;
+      padding: 14px 16px;
+      border-left: 4px solid #1a1a2e;
+      margin-bottom: 20px;
     }
 
+    /* Styles the + / - button */
+    button {
+      background-color: #1a1a2e;
+      color: white;
+      border: none;
+      padding: 4px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+
+    /* Makes the image fill the full width */
     img {
       width: 100%;
-      margin-top: 10px;
       border-radius: 6px;
+      margin-top: 10px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    hr {
-      margin: 30px 0;
-      border: none;
-      border-top: 1px solid #ccc;
+    /* Footer line */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Digital Twins: The Technology Mirroring Our World</h1>
-  <p><em>Prepared by: Murtaza | Class Code: ICD2O</em></p>
+  <!-- PAGE TITLE -->
+  <header>
+    <h1>Digital Twins</h1>
+    <p>The Technology Mirroring Our World &nbsp;|&nbsp; Prepared by: Murtaza &nbsp;|&nbsp; ICD2O</p>
+  </header>
 
-  <hr>
-
+  <!-- SECTION 1 -->
   <h2>What Are Digital Twins?</h2>
   <button onclick="toggle('s1', this)">+</button>
   <div class="content" id="s1">
@@ -75,13 +94,11 @@
       It is not just a 3D model — it mirrors what is actually happening to the real object at all times.
       Think of it as a digital shadow of something physical.
     </p>
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Digital_twin_nasa.jpg/640px-Digital_twin_nasa.jpg"
-      alt="NASA digital twin concept"
-    />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Digital_twin_nasa.jpg/640px-Digital_twin_nasa.jpg" alt="NASA digital twin concept">
     <p><em>NASA's concept of a digital twin — a physical spacecraft paired with its virtual model.</em></p>
   </div>
 
+  <!-- SECTION 2 -->
   <h2>What Problem Does It Solve?</h2>
   <button onclick="toggle('s2', this)">+</button>
   <div class="content" id="s2">
@@ -92,96 +109,71 @@
     </p>
   </div>
 
+  <!-- SECTION 3 -->
   <h2>How Does It Work?</h2>
   <button onclick="toggle('s3', this)">+</button>
   <div class="content" id="s3">
-    <p>
-      It works in three steps:
-    </p>
     <ol>
       <li>Sensors on the real object collect data like temperature, pressure, and speed.</li>
       <li>That data is sent to the cloud in real time.</li>
-      <li>Software uses the data to instantly update the virtual model, and AI can then predict problems before they happen.</li>
+      <li>Software updates the virtual model, and AI predicts problems before they happen.</li>
     </ol>
   </div>
 
+  <!-- SECTION 4 -->
   <h2>Where Is It Used Today?</h2>
   <button onclick="toggle('s4', this)">+</button>
   <div class="content" id="s4">
     <ul>
-      <li><strong>Aerospace:</strong> NASA and Airbus monitor aircraft engines to catch failures before they happen.</li>
-      <li><strong>Manufacturing:</strong> GE and Siemens use digital twins of factories to keep production running smoothly.</li>
-      <li><strong>Healthcare:</strong> Researchers are building "patient twins" to simulate how a body reacts to a treatment before prescribing it.</li>
-      <li><strong>Smart Cities:</strong> Singapore built a digital twin of its entire city to plan roads, buildings, and emergencies.</li>
-      <li><strong>Energy:</strong> Wind turbines and power grids are monitored through digital twins to save energy and prevent outages.</li>
+      <li><strong>Aerospace:</strong> NASA and Airbus monitor aircraft engines to catch failures early.</li>
+      <li><strong>Manufacturing:</strong> GE and Siemens twin their factories to keep production running smoothly.</li>
+      <li><strong>Healthcare:</strong> Researchers build "patient twins" to simulate how a body reacts to a treatment.</li>
+      <li><strong>Smart Cities:</strong> Singapore built a digital twin of its entire city to plan roads and emergencies.</li>
+      <li><strong>Energy:</strong> Wind turbines and power grids use digital twins to save energy and prevent outages.</li>
     </ul>
   </div>
 
+  <!-- SECTION 5 -->
   <h2>Positive Impacts</h2>
   <button onclick="toggle('s5', this)">+</button>
   <div class="content" id="s5">
     <ul>
-      <li>
-        <strong>Saves money:</strong> Companies catch equipment problems before they break, avoiding expensive repairs.
-        GE saves up to $1 billion per year on jet engines this way.
-      </li>
-      <li>
-        <strong>Helps the environment:</strong> Buildings and factories optimized by digital twins use less energy,
-        which cuts down on pollution and carbon emissions.
-      </li>
-      <li>
-        <strong>Better healthcare:</strong> Doctors could one day test a treatment on a patient's digital twin first,
-        making medicine safer and more personalized.
-      </li>
-      <li>
-        <strong>Safer cities:</strong> Governments can test how a new road or building will affect traffic and people
-        on a virtual city before spending any real money.
-      </li>
-      <li>
-        <strong>Less downtime:</strong> Factories and power plants stay running longer because problems are spotted
-        and fixed virtually before they cause a real shutdown.
-      </li>
+      <li><strong>Saves money:</strong> Companies catch problems before they break. GE saves up to $1 billion per year on jet engines this way.</li>
+      <li><strong>Helps the environment:</strong> Optimized buildings and factories use less energy, cutting pollution and carbon emissions.</li>
+      <li><strong>Better healthcare:</strong> Doctors could test treatments on a patient twin first, making medicine safer and more personalized.</li>
+      <li><strong>Safer cities:</strong> Governments test new roads or policies on a virtual city before spending real money.</li>
+      <li><strong>Less downtime:</strong> Factories stay running longer because problems are spotted and fixed virtually first.</li>
     </ul>
   </div>
 
+  <!-- SECTION 6 -->
   <h2>Negative Impacts</h2>
   <button onclick="toggle('s6', this)">+</button>
   <div class="content" id="s6">
     <ul>
-      <li>
-        <strong>Privacy concerns:</strong> A patient digital twin requires a huge amount of personal health data.
-        It is not always clear who owns that data or how it is protected.
-      </li>
-      <li>
-        <strong>Job losses:</strong> As digital twins automate monitoring and decision-making, some traditional
-        inspection and engineering jobs may no longer be needed.
-      </li>
-      <li>
-        <strong>Not equal for everyone:</strong> This technology is expensive to build, so wealthier companies
-        and countries benefit much more than poorer ones, making inequality worse.
-      </li>
-      <li>
-        <strong>Cybersecurity risk:</strong> If a hacker gets into the digital twin of a power grid or hospital,
-        they could use it to plan a real-world attack.
-      </li>
-      <li>
-        <strong>Who is responsible?</strong> If an AI digital twin recommends the wrong medical treatment and
-        someone is hurt, it is unclear whether the doctor, the hospital, or the software company is at fault.
-      </li>
+      <li><strong>Privacy concerns:</strong> Patient twins need a lot of personal health data — it is not always clear who owns it.</li>
+      <li><strong>Job losses:</strong> Automated monitoring may replace traditional inspection and engineering jobs.</li>
+      <li><strong>Not equal for everyone:</strong> It is expensive, so wealthier countries and companies benefit far more.</li>
+      <li><strong>Cybersecurity risk:</strong> A hacker inside a power grid's digital twin could plan a real-world attack.</li>
+      <li><strong>Who is responsible?</strong> If an AI twin recommends the wrong treatment and someone is hurt, blame is unclear.</li>
     </ul>
   </div>
 
-  <hr>
-  <p><em>© 2026 Murtaza | ICD2O Class Project</em></p>
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+    <p>© 2026 Murtaza | ICD2O Class Project</p>
+  </footer>
 
+  <!-- JAVASCRIPT: controls the + / - toggle button -->
   <script>
     function toggle(id, btn) {
-      var el = document.getElementById(id);
-      if (el.style.display === "block") {
-        el.style.display = "none";
+      var section = document.getElementById(id);
+      if (section.style.display === "block") {
+        section.style.display = "none";
         btn.textContent = "+";
       } else {
-        el.style.display = "block";
+        section.style.display = "block";
         btn.textContent = "−";
       }
     }
