@@ -1,25 +1,131 @@
 <!DOCTYPE html>
-<html>
-<body style="background-color: blue;">
+<html lang="en">
 
-    <h1 style="text-align: center;">hamza</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Digital Twins: The Technology Mirroring Our World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 750px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-    <p style="color: green; font-family: arial; font-size: 32px;">hamza is my  friend. We like to play video games and listen to music together every weekend.</p>
-    
-    <p style ="font-family: impact, charcoal, sans-serif;">hamza is also very good at drawing and wants to be an engenieer someday.</p>
+    button {
+      padding: 5px 12px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
 
-    <br>
+    .content {
+      display: none;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
 
-    <a href="https://en.wikipedia.org/wiki/Snapchat">Visit hamza Social Media</a>
-    <img src="https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg" alt="friends photo" width="250">
-<table border="1"> <tr> <th>friends</th><th>favorite game</th> </tr><tr> <td>hamza</td> <td>minecraft</td> </tr> <tr> <td>helot</td><td>roblox</td></tr> </table>
-<hr style="border: 4px solid white;">
-<h3>hamzas hobbies</h3>
-<ul>
-	<li>digital</li>
-	<li>gaming</li>
-</ul>
-<p>hamza is a <mark>great artist</mark>.</p>
-<p style="color: yellow;">hamzas favorite game is <del>roblox</del/></p>
+<body>
+
+  <h1>Digital Twins: The Technology Mirroring Our World</h1>
+  <p><em>Prepared by: [Your Name] | Class Code: ICD2O</em></p>
+
+  <hr>
+
+  <h2>What Are Digital Twins?</h2>
+  <button onclick="toggle('s1')">Show / Hide</button>
+  <div class="content" id="s1">
+    <p>
+      A digital twin is a virtual copy of a real-world object, system, or process that is updated in real time using live data.
+      It is not just a 3D model — it continuously receives information from sensors attached to the real object and mirrors
+      what is happening to it at all times. Think of it as a living, breathing digital shadow of something physical.
+    </p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Digital_twin_nasa.jpg/640px-Digital_twin_nasa.jpg"
+      alt="NASA digital twin concept"
+      width="100%"
+    />
+    <p><em>NASA's early concept of a digital twin pairing a physical spacecraft with its virtual model.</em></p>
+  </div>
+
+  <h2>What Problem Does It Solve?</h2>
+  <button onclick="toggle('s2')">Show / Hide</button>
+  <div class="content" id="s2">
+    <p>
+      Before digital twins, engineers could only monitor or test physical things by physically working on them.
+      This meant shutting down expensive equipment for inspections and only discovering problems after a breakdown
+      had already occurred. Digital twins allow engineers to safely watch, test, and predict issues on a virtual
+      copy — without ever stopping or touching the real machine.
+    </p>
+  </div>
+
+  <h2>How Do Digital Twins Work?</h2>
+  <button onclick="toggle('s3')">Show / Hide</button>
+  <div class="content" id="s3">
+    <p>
+      Digital twins are built from three main parts. First, the physical object is fitted with IoT sensors that
+      measure things like temperature, pressure, and speed. Second, that data is streamed to the cloud in real time.
+      Third, software uses the data to update a virtual model of the object instantly. Artificial intelligence can
+      then analyze the model to predict future problems or test "what if" scenarios — all without risk to the real thing.
+    </p>
+  </div>
+
+  <h2>Where Are Digital Twins Used Today?</h2>
+  <button onclick="toggle('s4')">Show / Hide</button>
+  <div class="content" id="s4">
+    <p>
+      Digital twins are already used across many industries. In <strong>aerospace</strong>, NASA and Airbus monitor
+      aircraft engines to predict failures before they happen. In <strong>manufacturing</strong>, companies like GE
+      and Siemens use digital twins of their production lines to reduce downtime. In <strong>healthcare</strong>,
+      researchers are developing patient digital twins to simulate how a person's body will respond to a treatment
+      before it is prescribed. Singapore has even built a full digital twin of its entire city to help plan traffic
+      and infrastructure.
+    </p>
+    <p>
+      For more information, visit the
+      <a href="https://www.ibm.com/topics/what-is-a-digital-twin" target="_blank">IBM explainer on Digital Twins</a>.
+    </p>
+  </div>
+
+  <h2>Impacts of Digital Twins</h2>
+  <button onclick="toggle('s5')">Show / Hide</button>
+  <div class="content" id="s5">
+    <p>
+      Digital twins offer major benefits. They save businesses millions of dollars by catching problems early,
+      reduce energy waste in buildings and factories, and could revolutionize personalized medicine. However,
+      they also raise serious concerns. Patient twins require vast amounts of personal health data, raising
+      privacy questions. The technology is expensive, meaning wealthier countries benefit far more than poorer ones.
+      There are also cybersecurity risks — a hacker who gains access to a digital twin of a power grid could use it
+      to plan a real-world attack. As the technology grows, society will need clear rules around data ownership,
+      ethics, and access.
+    </p>
+  </div>
+
+  <h2>Sources</h2>
+  <button onclick="toggle('s6')">Show / Hide</button>
+  <div class="content" id="s6">
+    <ul>
+      <li><a href="https://www.ibm.com/topics/what-is-a-digital-twin" target="_blank">IBM — What Is a Digital Twin?</a></li>
+      <li><a href="https://www.gartner.com/en/information-technology/glossary/digital-twin" target="_blank">Gartner — Digital Twin</a></li>
+      <li><a href="https://www.ge.com/digital/applications/digital-twin" target="_blank">GE Digital — Digital Twin Applications</a></li>
+      <li><a href="https://www.smartnation.gov.sg/initiatives/urban-living/virtual-singapore" target="_blank">Smart Nation Singapore — Virtual Singapore</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><em>© 2026 [Your Name] | ICD2O Class Project</em></p>
+
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      if (el.style.display === "block") {
+        el.style.display = "none";
+      } else {
+        el.style.display = "block";
+      }
+    }
+  </script>
+
 </body>
 </html>
