@@ -3,25 +3,59 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Digital Twins: The Technology Mirroring Our World</title>
+  <title>Digital Twins</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 750px;
+      max-width: 700px;
       margin: 40px auto;
       padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-bottom: 4px;
+      margin-top: 30px;
     }
 
     button {
-      padding: 5px 12px;
-      margin-top: 5px;
+      background: none;
+      border: 1px solid #555;
+      padding: 4px 10px;
       cursor: pointer;
+      font-size: 16px;
+      margin-top: 4px;
     }
 
     .content {
       display: none;
-      margin-top: 8px;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
@@ -29,100 +63,126 @@
 <body>
 
   <h1>Digital Twins: The Technology Mirroring Our World</h1>
-  <p><em>Prepared by: [Your Name] | Class Code: ICD2O</em></p>
+  <p><em>Prepared by: Murtaza | Class Code: ICD2O</em></p>
 
   <hr>
 
   <h2>What Are Digital Twins?</h2>
-  <button onclick="toggle('s1')">Show / Hide</button>
+  <button onclick="toggle('s1', this)">+</button>
   <div class="content" id="s1">
     <p>
-      A digital twin is a virtual copy of a real-world object, system, or process that is updated in real time using live data.
-      It is not just a 3D model — it continuously receives information from sensors attached to the real object and mirrors
-      what is happening to it at all times. Think of it as a living, breathing digital shadow of something physical.
+      A digital twin is a virtual copy of a real-world object or system that updates in real time using live data from sensors.
+      It is not just a 3D model — it mirrors what is actually happening to the real object at all times.
+      Think of it as a digital shadow of something physical.
     </p>
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Digital_twin_nasa.jpg/640px-Digital_twin_nasa.jpg"
       alt="NASA digital twin concept"
-      width="100%"
     />
-    <p><em>NASA's early concept of a digital twin pairing a physical spacecraft with its virtual model.</em></p>
+    <p><em>NASA's concept of a digital twin — a physical spacecraft paired with its virtual model.</em></p>
   </div>
 
   <h2>What Problem Does It Solve?</h2>
-  <button onclick="toggle('s2')">Show / Hide</button>
+  <button onclick="toggle('s2', this)">+</button>
   <div class="content" id="s2">
     <p>
-      Before digital twins, engineers could only monitor or test physical things by physically working on them.
-      This meant shutting down expensive equipment for inspections and only discovering problems after a breakdown
-      had already occurred. Digital twins allow engineers to safely watch, test, and predict issues on a virtual
-      copy — without ever stopping or touching the real machine.
+      Before digital twins, engineers had to physically shut down machines to inspect or test them.
+      Problems were usually only found after something had already broken.
+      Digital twins let engineers safely test and monitor a virtual copy without ever touching the real machine.
     </p>
   </div>
 
-  <h2>How Do Digital Twins Work?</h2>
-  <button onclick="toggle('s3')">Show / Hide</button>
+  <h2>How Does It Work?</h2>
+  <button onclick="toggle('s3', this)">+</button>
   <div class="content" id="s3">
     <p>
-      Digital twins are built from three main parts. First, the physical object is fitted with IoT sensors that
-      measure things like temperature, pressure, and speed. Second, that data is streamed to the cloud in real time.
-      Third, software uses the data to update a virtual model of the object instantly. Artificial intelligence can
-      then analyze the model to predict future problems or test "what if" scenarios — all without risk to the real thing.
+      It works in three steps:
     </p>
+    <ol>
+      <li>Sensors on the real object collect data like temperature, pressure, and speed.</li>
+      <li>That data is sent to the cloud in real time.</li>
+      <li>Software uses the data to instantly update the virtual model, and AI can then predict problems before they happen.</li>
+    </ol>
   </div>
 
-  <h2>Where Are Digital Twins Used Today?</h2>
-  <button onclick="toggle('s4')">Show / Hide</button>
+  <h2>Where Is It Used Today?</h2>
+  <button onclick="toggle('s4', this)">+</button>
   <div class="content" id="s4">
-    <p>
-      Digital twins are already used across many industries. In <strong>aerospace</strong>, NASA and Airbus monitor
-      aircraft engines to predict failures before they happen. In <strong>manufacturing</strong>, companies like GE
-      and Siemens use digital twins of their production lines to reduce downtime. In <strong>healthcare</strong>,
-      researchers are developing patient digital twins to simulate how a person's body will respond to a treatment
-      before it is prescribed. Singapore has even built a full digital twin of its entire city to help plan traffic
-      and infrastructure.
-    </p>
-    <p>
-      For more information, visit the
-      <a href="https://www.ibm.com/topics/what-is-a-digital-twin" target="_blank">IBM explainer on Digital Twins</a>.
-    </p>
+    <ul>
+      <li><strong>Aerospace:</strong> NASA and Airbus monitor aircraft engines to catch failures before they happen.</li>
+      <li><strong>Manufacturing:</strong> GE and Siemens use digital twins of factories to keep production running smoothly.</li>
+      <li><strong>Healthcare:</strong> Researchers are building "patient twins" to simulate how a body reacts to a treatment before prescribing it.</li>
+      <li><strong>Smart Cities:</strong> Singapore built a digital twin of its entire city to plan roads, buildings, and emergencies.</li>
+      <li><strong>Energy:</strong> Wind turbines and power grids are monitored through digital twins to save energy and prevent outages.</li>
+    </ul>
   </div>
 
-  <h2>Impacts of Digital Twins</h2>
-  <button onclick="toggle('s5')">Show / Hide</button>
+  <h2>Positive Impacts</h2>
+  <button onclick="toggle('s5', this)">+</button>
   <div class="content" id="s5">
-    <p>
-      Digital twins offer major benefits. They save businesses millions of dollars by catching problems early,
-      reduce energy waste in buildings and factories, and could revolutionize personalized medicine. However,
-      they also raise serious concerns. Patient twins require vast amounts of personal health data, raising
-      privacy questions. The technology is expensive, meaning wealthier countries benefit far more than poorer ones.
-      There are also cybersecurity risks — a hacker who gains access to a digital twin of a power grid could use it
-      to plan a real-world attack. As the technology grows, society will need clear rules around data ownership,
-      ethics, and access.
-    </p>
+    <ul>
+      <li>
+        <strong>Saves money:</strong> Companies catch equipment problems before they break, avoiding expensive repairs.
+        GE saves up to $1 billion per year on jet engines this way.
+      </li>
+      <li>
+        <strong>Helps the environment:</strong> Buildings and factories optimized by digital twins use less energy,
+        which cuts down on pollution and carbon emissions.
+      </li>
+      <li>
+        <strong>Better healthcare:</strong> Doctors could one day test a treatment on a patient's digital twin first,
+        making medicine safer and more personalized.
+      </li>
+      <li>
+        <strong>Safer cities:</strong> Governments can test how a new road or building will affect traffic and people
+        on a virtual city before spending any real money.
+      </li>
+      <li>
+        <strong>Less downtime:</strong> Factories and power plants stay running longer because problems are spotted
+        and fixed virtually before they cause a real shutdown.
+      </li>
+    </ul>
   </div>
 
-  <h2>Sources</h2>
-  <button onclick="toggle('s6')">Show / Hide</button>
+  <h2>Negative Impacts</h2>
+  <button onclick="toggle('s6', this)">+</button>
   <div class="content" id="s6">
     <ul>
-      <li><a href="https://www.ibm.com/topics/what-is-a-digital-twin" target="_blank">IBM — What Is a Digital Twin?</a></li>
-      <li><a href="https://www.gartner.com/en/information-technology/glossary/digital-twin" target="_blank">Gartner — Digital Twin</a></li>
-      <li><a href="https://www.ge.com/digital/applications/digital-twin" target="_blank">GE Digital — Digital Twin Applications</a></li>
-      <li><a href="https://www.smartnation.gov.sg/initiatives/urban-living/virtual-singapore" target="_blank">Smart Nation Singapore — Virtual Singapore</a></li>
+      <li>
+        <strong>Privacy concerns:</strong> A patient digital twin requires a huge amount of personal health data.
+        It is not always clear who owns that data or how it is protected.
+      </li>
+      <li>
+        <strong>Job losses:</strong> As digital twins automate monitoring and decision-making, some traditional
+        inspection and engineering jobs may no longer be needed.
+      </li>
+      <li>
+        <strong>Not equal for everyone:</strong> This technology is expensive to build, so wealthier companies
+        and countries benefit much more than poorer ones, making inequality worse.
+      </li>
+      <li>
+        <strong>Cybersecurity risk:</strong> If a hacker gets into the digital twin of a power grid or hospital,
+        they could use it to plan a real-world attack.
+      </li>
+      <li>
+        <strong>Who is responsible?</strong> If an AI digital twin recommends the wrong medical treatment and
+        someone is hurt, it is unclear whether the doctor, the hospital, or the software company is at fault.
+      </li>
     </ul>
   </div>
 
   <hr>
-  <p><em>© 2026 [Your Name] | ICD2O Class Project</em></p>
+  <p><em>© 2026 Murtaza | ICD2O Class Project</em></p>
 
   <script>
-    function toggle(id) {
+    function toggle(id, btn) {
       var el = document.getElementById(id);
       if (el.style.display === "block") {
         el.style.display = "none";
+        btn.textContent = "+";
       } else {
         el.style.display = "block";
+        btn.textContent = "−";
       }
     }
   </script>
