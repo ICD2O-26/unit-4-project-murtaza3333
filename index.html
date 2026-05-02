@@ -6,11 +6,10 @@
   <title>Digital Twins</title>
 
   <style>
-    /* Page background and font */
     body {
       font-family: Arial, sans-serif;
       font-size: 18px;
-      max-width: 700px;
+      max-width: 750px;
       margin: 40px auto;
       padding: 0 20px;
       background-color: #f4f4f4;
@@ -18,66 +17,47 @@
       text-align: center;
     }
 
-    /* Dark banner at the top */
     header {
       background-color: #1a1a2e;
       color: white;
       padding: 30px 20px;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-bottom: 30px;
     }
 
-    header h1 {
-      margin: 0 0 6px 0;
-    }
-
     header p {
-      margin: 0;
-      opacity: 0.7;
+      opacity: 0.75;
+      margin: 5px 0 0;
     }
 
-    /* Section heading color */
-    h2 {
-      color: #1a1a2e;
-      margin-bottom: 4px;
-    }
-
-    /* Hides a section by default */
-    .content {
-      display: none;
-      background-color: white;
-      padding: 14px 16px;
-      border-left: 4px solid #1a1a2e;
-      margin-bottom: 20px;
-    }
-
-    /* Styles the + / - button */
-    button {
-      background-color: #1a1a2e;
-      color: white;
-      border: none;
-      padding: 8px 20px;
-      cursor: pointer;
+    summary {
       font-size: 22px;
-      border-radius: 4px;
+      font-weight: bold;
+      color: #1a1a2e;
+      cursor: pointer;
+      padding: 12px 0;
     }
 
-    /* Centers bullet and numbered lists */
-    ul, ol {
-      display: inline-block;
+    details {
+      background-color: white;
+      border-left: 4px solid #1a1a2e;
+      padding: 12px 16px;
+      margin-bottom: 16px;
       text-align: left;
+      border-radius: 6px;
     }
 
-    /* Makes the image fill the full width */
+    ul, ol {
+      padding-left: 20px;
+    }
+
     img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 8px;
       margin-top: 10px;
     }
 
-    /* Footer line */
     footer {
-      text-align: center;
       margin-top: 40px;
       color: #888;
       font-size: 14px;
@@ -87,105 +67,75 @@
 
 <body>
 
-  <!-- PAGE TITLE -->
   <header>
     <h1>Digital Twins</h1>
-    <p>The Technology Mirroring Our World &nbsp;|&nbsp; Prepared by: Murtaza &nbsp;|&nbsp; ICD2O</p>
+    <p>How Real-World Systems Are Simulated, Monitored, and Optimized in Real Time</p>
   </header>
 
-  <!-- SECTION 1 -->
-  <h2>What Are Digital Twins?</h2>
-  <button onclick="toggle('s1', this)">+</button>
-  <div class="content" id="s1">
-    <p>
-      A digital twin is a virtual copy of a real-world object or system that updates in real time using live data from sensors.
-      It is not just a 3D model — it mirrors what is actually happening to the real object at all times.
-      Think of it as a digital shadow of something physical.
-    </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Digital_twin_nasa.jpg/640px-Digital_twin_nasa.jpg" alt="NASA digital twin concept">
-    <p><em>NASA's concept of a digital twin — a physical spacecraft paired with its virtual model.</em></p>
-  </div>
+  <details>
+    <summary>What is a Digital Twin?</summary>
+    <p>A digital twin is a continuously updated virtual model of a physical object, system, or process. It reflects real-world conditions using live data from sensors and software systems.</p>
+    <p>Unlike a static simulation, a digital twin evolves alongside its real-world counterpart, allowing it to represent current states rather than fixed assumptions.</p>
+  </details>
 
-  <!-- SECTION 2 -->
-  <h2>What Problem Does It Solve?</h2>
-  <button onclick="toggle('s2', this)">+</button>
-  <div class="content" id="s2">
-    <p>
-      Before digital twins, engineers had to physically shut down machines to inspect or test them.
-      Problems were usually only found after something had already broken.
-      Digital twins let engineers safely test and monitor a virtual copy without ever touching the real machine.
-    </p>
-  </div>
+  <details>
+    <summary>Why Digital Twins Exist</summary>
+    <p>Modern systems like aircraft, factories, and power grids are too complex and expensive to test directly. Digital twins solve this by enabling safe experimentation and prediction in a virtual environment.</p>
+    <p>They reduce downtime, prevent failures, and help engineers make decisions before changes are applied in the real world.</p>
+  </details>
 
-  <!-- SECTION 3 -->
-  <h2>How Does It Work?</h2>
-  <button onclick="toggle('s3', this)">+</button>
-  <div class="content" id="s3">
+  <details>
+    <summary>How They Work</summary>
     <ol>
-      <li>Sensors on the real object collect data like temperature, pressure, and speed.</li>
-      <li>That data is sent to the cloud in real time.</li>
-      <li>Software updates the virtual model, and AI predicts problems before they happen.</li>
+      <li>Sensors collect real-time data (temperature, pressure, performance, etc.).</li>
+      <li>Data is transmitted to a digital model stored in software or cloud systems.</li>
+      <li>The model updates continuously to match the physical system.</li>
+      <li>AI and analytics simulate outcomes, predict failures, or optimize performance.</li>
     </ol>
-  </div>
+  </details>
 
-  <!-- SECTION 4 -->
-  <h2>Where Is It Used Today?</h2>
-  <button onclick="toggle('s4', this)">+</button>
-  <div class="content" id="s4">
+  <details>
+    <summary>Where Digital Twins Are Used</summary>
     <ul>
-      <li><strong>Aerospace:</strong> NASA and Airbus monitor aircraft engines to catch failures early.</li>
-      <li><strong>Manufacturing:</strong> GE and Siemens twin their factories to keep production running smoothly.</li>
-      <li><strong>Healthcare:</strong> Researchers build "patient twins" to simulate how a body reacts to a treatment.</li>
-      <li><strong>Smart Cities:</strong> Singapore built a digital twin of its entire city to plan roads and emergencies.</li>
-      <li><strong>Energy:</strong> Wind turbines and power grids use digital twins to save energy and prevent outages.</li>
+      <li><strong>Aerospace:</strong> Aircraft engines and spacecraft systems are monitored to prevent failure and improve safety.</li>
+      <li><strong>Manufacturing:</strong> Factories simulate production lines to reduce waste and improve efficiency.</li>
+      <li><strong>Healthcare:</strong> Patient-specific models help simulate how treatments might affect the human body.</li>
+      <li><strong>Smart Cities:</strong> Urban infrastructure is modeled to improve traffic flow, energy use, and emergency planning.</li>
+      <li><strong>Energy:</strong> Power grids and wind turbines are optimized to improve reliability and reduce downtime.</li>
     </ul>
-  </div>
+  </details>
 
-  <!-- SECTION 5 -->
-  <h2>Positive Impacts</h2>
-  <button onclick="toggle('s5', this)">+</button>
-  <div class="content" id="s5">
+  <details>
+    <summary>Benefits</summary>
     <ul>
-      <li><strong>Saves money:</strong> Companies catch problems before they break. GE saves up to $1 billion per year on jet engines this way.</li>
-      <li><strong>Helps the environment:</strong> Optimized buildings and factories use less energy, cutting pollution and carbon emissions.</li>
-      <li><strong>Better healthcare:</strong> Doctors could test treatments on a patient twin first, making medicine safer and more personalized.</li>
-      <li><strong>Safer cities:</strong> Governments test new roads or policies on a virtual city before spending real money.</li>
-      <li><strong>Less downtime:</strong> Factories stay running longer because problems are spotted and fixed virtually first.</li>
+      <li><strong>Predictive maintenance:</strong> Problems are detected before failure occurs.</li>
+      <li><strong>Cost efficiency:</strong> Reduces expensive physical testing and downtime.</li>
+      <li><strong>Safer systems:</strong> Risk-free simulation of dangerous scenarios.</li>
+      <li><strong>Better decision-making:</strong> Engineers and planners test multiple outcomes before acting.</li>
+      <li><strong>Sustainability:</strong> Optimizes energy use and reduces waste.</li>
     </ul>
-  </div>
+  </details>
 
-  <!-- SECTION 6 -->
-  <h2>Negative Impacts</h2>
-  <button onclick="toggle('s6', this)">+</button>
-  <div class="content" id="s6">
+  <details>
+    <summary>Limitations & Risks</summary>
     <ul>
-      <li><strong>Privacy concerns:</strong> Patient twins need a lot of personal health data — it is not always clear who owns it.</li>
-      <li><strong>Job losses:</strong> Automated monitoring may replace traditional inspection and engineering jobs.</li>
-      <li><strong>Not equal for everyone:</strong> It is expensive, so wealthier countries and companies benefit far more.</li>
-      <li><strong>Cybersecurity risk:</strong> A hacker inside a power grid's digital twin could plan a real-world attack.</li>
-      <li><strong>Who is responsible?</strong> If an AI twin recommends the wrong treatment and someone is hurt, blame is unclear.</li>
+      <li><strong>Data dependency:</strong> Accuracy depends on high-quality sensor data.</li>
+      <li><strong>Cost:</strong> Building and maintaining twins can be expensive.</li>
+      <li><strong>Privacy concerns:</strong> Especially in healthcare and personal data systems.</li>
+      <li><strong>Cybersecurity risks:</strong> Connected systems can be vulnerable to attacks.</li>
+      <li><strong>Complexity:</strong> Difficult to build accurate models for highly complex systems.</li>
     </ul>
-  </div>
+  </details>
 
-  <!-- FOOTER -->
+  <details>
+    <summary>Learn More</summary>
+    <p>Digital twins are rapidly evolving and are becoming a core part of modern engineering, healthcare, and infrastructure systems worldwide.</p>
+  </details>
+
   <footer>
     <hr>
-    <p>© 2026 Murtaza | ICD2O Class Project</p>
+    <p>© 2026 Digital Twins Educational Page</p>
   </footer>
-
-  <!-- JAVASCRIPT: controls the + / - toggle button -->
-  <script>
-    function toggle(id, btn) {
-      var section = document.getElementById(id);
-      if (section.style.display === "block") {
-        section.style.display = "none";
-        btn.textContent = "+";
-      } else {
-        section.style.display = "block";
-        btn.textContent = "−";
-      }
-    }
-  </script>
 
 </body>
 </html>
