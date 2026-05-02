@@ -9,7 +9,7 @@
     body {
       font-family: Arial, sans-serif;
       font-size: 18px;
-      max-width: 750px;
+      max-width: 780px;
       margin: 40px auto;
       padding: 0 20px;
       background-color: #f4f4f4;
@@ -26,7 +26,7 @@
     }
 
     header p {
-      opacity: 0.75;
+      opacity: 0.85;
       margin: 5px 0 0;
     }
 
@@ -51,16 +51,21 @@
       padding-left: 20px;
     }
 
-    img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
     footer {
       margin-top: 40px;
-      color: #888;
+      color: #666;
       font-size: 14px;
+      text-align: center;
+    }
+
+    a {
+      color: #1a1a2e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -69,71 +74,86 @@
 
   <header>
     <h1>Digital Twins</h1>
-    <p>How Real-World Systems Are Simulated, Monitored, and Optimized in Real Time</p>
+    <p>How real-world systems are copied into computers to understand, test, and improve them</p>
   </header>
 
   <details>
     <summary>What is a Digital Twin?</summary>
-    <p>A digital twin is a continuously updated virtual model of a physical object, system, or process. It reflects real-world conditions using live data from sensors and software systems.</p>
-    <p>Unlike a static simulation, a digital twin evolves alongside its real-world counterpart, allowing it to represent current states rather than fixed assumptions.</p>
+    <p>A digital twin is a virtual version of something real, like a machine, building, city, or even a human body.</p>
+    <p>Think of a tree. If you only check it once a day, you might assume it grows at a steady rate. But in reality, its growth changes depending on sunlight, water, temperature, and weather.</p>
+    <p>A digital twin is like a live computer version of that tree that updates using real data from sensors. Instead of guessing, you can see how it is actually changing in real time.</p>
   </details>
 
   <details>
     <summary>Why Digital Twins Exist</summary>
-    <p>Modern systems like aircraft, factories, and power grids are too complex and expensive to test directly. Digital twins solve this by enabling safe experimentation and prediction in a virtual environment.</p>
-    <p>They reduce downtime, prevent failures, and help engineers make decisions before changes are applied in the real world.</p>
+    <p>Real-world systems like factories, machines, and medical treatments are often too expensive, risky, or complicated to test directly. For example, stopping a factory just to try a change can waste money, and testing medical treatments directly on people can be dangerous. Because of this, engineers and scientists use digital twins to create a virtual version of the system. This lets them safely test ideas, predict problems, and see what might happen before making real-world changes. It became possible thanks to modern sensors, AI, and fast computers that can update these virtual models in real time.</p>
   </details>
 
   <details>
     <summary>How They Work</summary>
     <ol>
-      <li>Sensors collect real-time data (temperature, pressure, performance, etc.).</li>
-      <li>Data is transmitted to a digital model stored in software or cloud systems.</li>
-      <li>The model updates continuously to match the physical system.</li>
-      <li>AI and analytics simulate outcomes, predict failures, or optimize performance.</li>
+      <li>Sensors collect real-world data (temperature, speed, pressure, health signals, etc.).</li>
+      <li>This data is sent to a computer model.</li>
+      <li>The model updates to match what is happening in real life.</li>
+      <li>It can then simulate outcomes and predict what might happen next.</li>
     </ol>
   </details>
 
   <details>
-    <summary>Where Digital Twins Are Used</summary>
+    <summary>Good vs Bad Uses</summary>
+    <p><strong>Good use:</strong></p>
     <ul>
-      <li><strong>Aerospace:</strong> Aircraft engines and spacecraft systems are monitored to prevent failure and improve safety.</li>
-      <li><strong>Manufacturing:</strong> Factories simulate production lines to reduce waste and improve efficiency.</li>
-      <li><strong>Healthcare:</strong> Patient-specific models help simulate how treatments might affect the human body.</li>
-      <li><strong>Smart Cities:</strong> Urban infrastructure is modeled to improve traffic flow, energy use, and emergency planning.</li>
-      <li><strong>Energy:</strong> Power grids and wind turbines are optimized to improve reliability and reduce downtime.</li>
+      <li>Predicting failures early so machines, engines, or systems can be repaired before breaking</li>
+      <li>Helping doctors plan safer treatments and surgeries by testing ideas first in a virtual model</li>
+      <li>Reducing cost and waste by avoiding unnecessary real-world experiments</li>
+      <li>Testing changes (like new designs or systems) before applying them in real life</li>
+      <li>Continuously improving performance of systems using live data feedback</li>
+    </ul>
+
+    <p><strong>Bad or risky use:</strong></p>
+    <ul>
+      <li>Using poor or incomplete data, which can lead to wrong predictions</li>
+      <li>Over-trusting the digital model instead of checking real-world conditions</li>
+      <li>Privacy risks if too much personal or health data is collected and stored</li>
+      <li>Cyberattacks on connected systems like hospitals, factories, or power grids</li>
     </ul>
   </details>
 
   <details>
     <summary>Benefits</summary>
     <ul>
-      <li><strong>Predictive maintenance:</strong> Problems are detected before failure occurs.</li>
-      <li><strong>Cost efficiency:</strong> Reduces expensive physical testing and downtime.</li>
-      <li><strong>Safer systems:</strong> Risk-free simulation of dangerous scenarios.</li>
-      <li><strong>Better decision-making:</strong> Engineers and planners test multiple outcomes before acting.</li>
-      <li><strong>Sustainability:</strong> Optimizes energy use and reduces waste.</li>
+      <li>Find problems before they happen</li>
+      <li>Save money by reducing failures</li>
+      <li>Make systems safer</li>
+      <li>Test ideas without real-world risk</li>
+      <li>Improve efficiency and reduce waste</li>
     </ul>
   </details>
 
   <details>
-    <summary>Limitations & Risks</summary>
+    <summary>Limits</summary>
     <ul>
-      <li><strong>Data dependency:</strong> Accuracy depends on high-quality sensor data.</li>
-      <li><strong>Cost:</strong> Building and maintaining twins can be expensive.</li>
-      <li><strong>Privacy concerns:</strong> Especially in healthcare and personal data systems.</li>
-      <li><strong>Cybersecurity risks:</strong> Connected systems can be vulnerable to attacks.</li>
-      <li><strong>Complexity:</strong> Difficult to build accurate models for highly complex systems.</li>
+      <li>Needs large amounts of accurate data</li>
+      <li>Can be expensive to build and maintain</li>
+      <li>Privacy concerns in healthcare and personal data</li>
+      <li>Security risks if systems are hacked</li>
+      <li>Complex systems are still hard to model perfectly</li>
     </ul>
   </details>
 
   <details>
-    <summary>Learn More</summary>
-    <p>Digital twins are rapidly evolving and are becoming a core part of modern engineering, healthcare, and infrastructure systems worldwide.</p>
+    <summary>Impacts (Social, Economic, Environmental, Local, Global)</summary>
+    <p><strong>Social:</strong> Improves safety and healthcare by helping experts make better decisions, but increases reliance on digital systems.</p>
+    <p><strong>Economic:</strong> Reduces costs from failures and waste, but can be expensive to implement and maintain.</p>
+    <p><strong>Environmental:</strong> Helps reduce energy use and material waste by optimizing systems like factories and cities.</p>
+    <p><strong>Local:</strong> Helps individual cities and communities improve infrastructure, traffic, and emergency planning.</p>
+    <p><strong>Global:</strong> Improves large-scale systems like aviation, shipping, healthcare, and global supply chains.</p>
   </details>
 
   <footer>
     <hr>
+    <p><a href="https://www.ibm.com/topics/what-is-a-digital-twin" target="_blank">IBM: What is a Digital Twin?</a></p>
+    <p><a href="https://www.ge.com/digital/applications/digital-twin" target="_blank">GE Digital Twin Overview</a></p>
     <p>© 2026 Digital Twins Educational Page</p>
   </footer>
 
